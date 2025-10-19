@@ -1,0 +1,84 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "ZTE Modem Configuration",
+        "description": "Configure connection parameters for ZTE modem",
+        "data": {
+          "host": "Device IP Address",
+          "username": "Username",
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Unable to connect to device, please check IP address and network connection",
+      "unknown": "Unknown error occurred"
+    },
+    "abort": {
+      "already_configured": "This device is already configured"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "ZTE Modem Options",
+        "data": {
+          "update_interval": "Update interval (seconds)"
+        }
+      }
+    }
+  },
+  "services": {
+    "restart_device": {
+      "name": "Restart Device",
+      "description": "Restart ZTE modem device",
+      "fields": {
+        "entity_id": {
+          "name": "Entity ID",
+          "description": "Any sensor entity ID corresponding to the device to restart"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "optical_connection": {
+        "name": "Optical Connection Status"
+      },
+      "optical_rx_power": {
+        "name": "Optical Module RX Power"
+      },
+      "optical_tx_power": {
+        "name": "Optical Module TX Power"
+      },
+      "optical_current": {
+        "name": "Optical Module Current"
+      },
+      "optical_voltage": {
+        "name": "Optical Module Voltage"
+      },
+      "optical_temperature": {
+        "name": "Optical Module Temperature"
+      },
+      "lan_connection": {
+        "name": "LAN Connection Status"
+      },
+      "lan_rx_packets": {
+        "name": "LAN RX Packets"
+      },
+      "lan_rx_bytes": {
+        "name": "LAN RX Bytes"
+      },
+      "lan_tx_packets": {
+        "name": "LAN TX Packets"
+      },
+      "lan_tx_bytes": {
+        "name": "LAN TX Bytes"
+      },
+      "lan_error_frames": {
+        "name": "LAN Error Frames"
+      }
+    }
+  }
+}

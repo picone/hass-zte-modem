@@ -1,0 +1,92 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "中兴光猫配置",
+        "description": "配置中兴光猫的连接参数",
+        "data": {
+          "host": "设备IP地址",
+          "username": "用户名",
+          "password": "密码"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "无法连接到设备，请检查IP地址和网络连接",
+      "unknown": "发生未知错误"
+    },
+    "abort": {
+      "already_configured": "此设备已配置"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "中兴光猫选项",
+        "data": {
+          "update_interval": "更新间隔（秒）"
+        }
+      }
+    }
+  },
+  "services": {
+    "restart_device": {
+      "name": "重启设备",
+      "description": "重启中兴光猫设备",
+      "fields": {
+        "entity_id": {
+          "name": "实体ID",
+          "description": "要重启的设备对应的任意传感器实体ID"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "optical_connection": {
+        "name": "光口连接状态",
+        "state": {
+          "Connected": "已连接",
+          "Disconnected": "未连接"
+        }
+      },
+      "optical_rx_power": {
+        "name": "光模块输入功率"
+      },
+      "optical_tx_power": {
+        "name": "光模块输出功率"
+      },
+      "optical_current": {
+        "name": "光模块电流"
+      },
+      "optical_voltage": {
+        "name": "光模块电压"
+      },
+      "optical_temperature": {
+        "name": "光模块温度"
+      },
+      "lan_connection": {
+        "name": "LAN连接状态",
+        "state": {
+          "Connected": "已连接",
+          "Disconnected": "未连接"
+        }
+      },
+      "lan_rx_packets": {
+        "name": "LAN接收包数"
+      },
+      "lan_rx_bytes": {
+        "name": "LAN接收字节数"
+      },
+      "lan_tx_packets": {
+        "name": "LAN发送包数"
+      },
+      "lan_tx_bytes": {
+        "name": "LAN发送字节数"
+      },
+      "lan_error_frames": {
+        "name": "LAN错误帧数"
+      }
+    }
+  }
+}

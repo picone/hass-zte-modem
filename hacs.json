@@ -1,0 +1,9 @@
+{
+  "name": "ZTE Modem",
+  "content_in_root": false,
+  "filename": "hass_zte_modem",
+  "country": ["CN"],
+  "homeassistant": "2023.1.0",
+  "render_readme": true,
+  "iot_class": "Local Polling"
+}

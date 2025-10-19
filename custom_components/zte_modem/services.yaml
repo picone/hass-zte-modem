@@ -1,0 +1,11 @@
+restart_device:
+  name: Restart Device
+  description: Restart ZTE modem device
+  fields:
+    config_entry_id:
+      name: Configuration Entry ID
+      description: The configuration entry ID of the ZTE modem device to restart
+      required: true
+      selector:
+        config_entry:
+          integration: zte_modem

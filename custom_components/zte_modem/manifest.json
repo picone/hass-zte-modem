@@ -1,0 +1,13 @@
+{
+  "domain": "zte_modem",
+  "name": "ZTE Modem",
+  "codeowners": ["@picone"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/picone/hass-zte-modem",
+  "integration_type": "device",
+  "iot_class": "local_polling",
+  "requirements": ["aiohttp>=3.8.0", "cryptography>=3.4.8"],
+  "version": "1.0.0",
+  "after_dependencies": ["translations"]
+}
